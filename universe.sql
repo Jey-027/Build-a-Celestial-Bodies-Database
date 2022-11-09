@@ -49,7 +49,7 @@ ALTER TABLE moon ADD FOREIGN KEY (planet_id) REFERENCES planet (planet_id);
 ALTER TABLE asteroid ADD FOREIGN KEY (galaxy_id) REFERENCES galaxy (galaxy_id);
 
 INSERT INTO galaxy (name, num_planet, galaxy_group, galaxy_size_m)
-VALUES  ('via lactea',160000,'grupo local',-20.8);
+VALUES  ('via lactea',160000,'grupo local',-20.8),
 		('enana del can mayor',null,'grupo local',null),
 		('enana de la osa mayor',null,'grupo local',-7.13),
 		('enana eliptica de sagitario',null,'grupo local',-12.67),
@@ -79,7 +79,7 @@ VALUES  ('mercurio','74.8 M',2439.7,false,1),
 		('haumea','null',816,false,1),
 		('makemake','null',715,false,1);
 
-INSERT INTO moon (name, distance_km, radio_km, planet_id)
+INSERT INTO moon (name, distance_km_earth, radio_km, planet_id)
 VALUES  ('europa',628.3,1560.8,5),
 		('ganimedes',628.3,2634.1,5),
 		('calisto',628.3,2410.3,5),
